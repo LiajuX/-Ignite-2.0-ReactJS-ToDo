@@ -1,0 +1,91 @@
+.task {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+
+  padding: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  background: var(--gray-500);
+}
+
+.doneTask {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+
+  padding: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  background: var(--gray-500);
+}
+
+.task:not(:first-child), .doneTask:not(:first-child) {
+  margin-top: 0.75rem;
+}
+
+.checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+
+  border: 2px solid var(--blue-300);
+  border-radius: 1.5rem;
+
+  background: transparent;
+
+  transition: all 0.1s;
+
+  cursor: pointer;
+}
+
+.checkbox:hover {
+  border: 2px solid var(--blue-500);
+
+  background: var(--blue-20);
+}
+
+.checkedBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.25rem;
+  height: 1.25rem;
+
+  border-radius: 1.5rem;
+
+  background: var(--purple-500);
+
+  transition: all 0.1s;
+
+  cursor: pointer;
+}
+
+.checkedBox:hover {
+  background: var(--purple-300);
+}
+
+.taskTitle {
+  flex: 1;
+}
+
+.deleteButton {
+  padding: 0.3125rem;
+  border-radius: 4px;
+
+  background: transparent;
+  color: var(--gray-300);
+
+  line-height: 0;
+
+  transition: all 0.2s;
+}
+
+.deleteButton:hover {
+  background: var(--gray-400);
+  color: var(--red-500);
+}

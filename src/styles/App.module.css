@@ -1,0 +1,123 @@
+.container {
+  max-width: 46rem;
+
+  margin: 0 auto;
+}
+
+.createTaskInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  width: 100%;
+
+  margin: -1.7625rem 0 4rem;
+}
+
+.createTaskInput input {
+  width: 100%;
+
+  padding: 1rem;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+
+  background: var(--gray-500);
+  color: var(--gray-100);
+
+  font-size: 1rem;
+}
+
+.createTaskInput input:focus {
+  border: 1px solid var(--purple-500);
+}
+
+.createTaskInput button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+  border-radius: 8px;
+
+  background: var(--blue-500);
+
+  color: var(--gray-100);
+  font-weight: bold;
+
+  transition: all 0.2s;
+}
+
+.createTaskInput button:hover {
+  background: var(--blue-300);
+}
+
+.createTaskInput button svg {
+  margin-left: 0.5rem;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.taskList header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  margin-bottom: 1.5rem;
+}
+
+.taskList header strong {
+  margin-right: 0.5rem;
+}
+
+.taskList header span {
+  padding: 0.125rem 0.5rem;
+  border-radius: 999px;
+
+  background: var(--gray-400);
+
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.taskCount strong {
+  color: var(--blue-300)
+}
+
+.doneTasksCount strong {
+  color: var(--purple-300)
+}
+
+.content {
+  width: 100%;
+  
+  margin-bottom: 4rem;
+}
+
+.emptyList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 4rem 0;
+  border-top: 1px solid var(--gray-400);
+
+  color: var(--gray-300);
+
+  font-size: 1rem;
+}
+
+.emptyList svg {
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
